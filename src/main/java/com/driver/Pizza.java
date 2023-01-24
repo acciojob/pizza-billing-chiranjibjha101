@@ -59,9 +59,9 @@ public class Pizza {
         this.price = price;
     }
 
-    public void setAddExtraCheese(boolean addExtraCheese) {
-        this.addExtraCheese = addExtraCheese;
-    }
+    //public void setAddExtraCheese(boolean addExtraCheese) {
+    //    this.addExtraCheese = addExtraCheese;
+   // }
 
     public String getBill(){
         // your code goes here
