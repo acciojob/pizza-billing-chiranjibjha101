@@ -8,6 +8,7 @@ public class Pizza {
     private boolean addExtraCheese=false;
     private boolean addExtraToppings =false;
     private boolean addTakeaway=false;
+    private boolean billGenerated=false;
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
