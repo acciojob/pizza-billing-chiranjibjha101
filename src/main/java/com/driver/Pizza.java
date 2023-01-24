@@ -39,13 +39,11 @@ public class Pizza {
             addExtraToppings=true;
         }
         else if (!addExtraToppings && !isVeg) {
-            if(!addExtraToppings && isVeg){
                 bill+="Extra Toppings Added: 120\n";
                 price+=120;
                 addExtraToppings=true;
             }
         }
-    }
 
     public void addTakeaway(){
         if(!addTakeaway){
@@ -55,9 +53,9 @@ public class Pizza {
         }
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+    //public void setPrice(int price) {
+    //    this.price = price;
+   // }
 
     //public void setAddExtraCheese(boolean addExtraCheese) {
     //    this.addExtraCheese = addExtraCheese;
