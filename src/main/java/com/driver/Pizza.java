@@ -11,10 +11,10 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
-        if(isVeg){price=300;bill="Base Price Of The Pizza:300\n";}
+        if(isVeg){price=300;bill="Base Price Of The Pizza: 300"+"\n";}
         else{
             price=400;
-            bill="Base Price Of The Pizza:400\n";
+            bill="Base Price Of The Pizza: 400"+"\n";
         }
     }
 
@@ -26,7 +26,7 @@ public class Pizza {
         // your code goes here
         if(!addExtraCheese) {
             price += 80;
-            bill+="Extra Cheese Added: 80\n";
+            bill+="Extra Cheese Added: 80"+"\n";
             addExtraCheese=true;
         }
 
@@ -34,12 +34,12 @@ public class Pizza {
 
     public void addExtraToppings(){
         if(!addExtraToppings && isVeg){
-            bill+="Extra Toppings Added: 70\n";
+            bill+="Extra Toppings Added: 70"+"\n";
             price+=70;
             addExtraToppings=true;
         }
         else if (!addExtraToppings && !isVeg) {
-                bill+="Extra Toppings Added: 120\n";
+                bill+="Extra Toppings Added: 120"+"\n";
                 price+=120;
                 addExtraToppings=true;
             }
@@ -47,7 +47,7 @@ public class Pizza {
 
     public void addTakeaway(){
         if(!addTakeaway){
-            bill+="Paperbag Added: 20\n";
+            bill+="Paperbag Added: 20"+"\n";
             addTakeaway=true;
             price+=20;
         }
